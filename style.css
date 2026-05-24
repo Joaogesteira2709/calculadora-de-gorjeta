@@ -9,7 +9,7 @@
     --green-100: #f3f9fa;
     --green-200: #c5e4e7;
     --green-300: #9ebbbd;
-    --green400: #7f9d9f;
+    --green-400: #7f9d9f;
     --green-500: #5e7a7d;
     --green-600: #547878;
     --green-700: #3d6666;
@@ -31,10 +31,12 @@ header{
 main{
     background-color: var(--white);
     padding: 2rem;
+    border-radius: 1.562rem 1.562rem 0 0;
 }
 
 .conta, 
-.gorjeta{
+.gorjeta,
+.pessoas{
     margin-bottom: 2rem;
 }
 
@@ -111,4 +113,35 @@ main{
 
 .pessoas #erro{
     display: none;
+}
+
+.resultados{
+    background-color: var(--green-800);
+    border-radius: 0.9375rem;
+    padding: 1.5rem;
+}
+
+.resultados div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resultados p{
+    color: var(--green-400);
+    font-size: 0.8125rem;
+}
+
+.resultados p strong{
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.resultados div > strong{
+    color: var(--light-green);
+    font-size: 2rem;
+}
+
+.resultados . .gorjeta-total{
+    margin-bottom: 1.25rem;
 }
